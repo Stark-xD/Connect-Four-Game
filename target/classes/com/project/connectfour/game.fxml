@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ctrl + alt + L for indent with proper spaces -->
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="rootGridPane" style="-fx-background-color: #D9F7F0;" xmlns="http://javafx.com/javafx/11.0.2"
+          xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.connectfour.Controller">
+
+        <columnConstraints>
+                <ColumnConstraints/>
+                <ColumnConstraints maxWidth="361.30436001004296" minWidth="259.3043447512539"
+                                   prefWidth="259.3043447512539"/>
+        </columnConstraints>
+        <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+                <RowConstraints/>
+        </rowConstraints>
+
+        <children>
+                <Pane GridPane.columnSpan="2"/>
+                <Pane fx:id="insertedDiscsPane" prefHeight="400.0" prefWidth="200.0" GridPane.rowIndex="1"/>
+                <VBox style="-fx-background-color: #2B3B4C;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                        <children>
+                                <Pane prefHeight="125.0" prefWidth="260.0">
+                                        <children>
+                                                <TextField fx:id="player_1" alignment="CENTER" layoutX="49.0"
+                                                           layoutY="14.0" promptText="Player One"/>
+                                                <TextField fx:id="player_2" alignment="CENTER" layoutX="49.0"
+                                                           layoutY="50.0" promptText="Player Two"/>
+                                                <Button fx:id="setName" layoutX="57.0" layoutY="85.0"
+                                                        mnemonicParsing="false" prefHeight="26.0" prefWidth="129.0"
+                                                        text="Set Name"/>
+                                        </children>
+                                </Pane>
+                                <Region prefHeight="121.0" prefWidth="260.0" VBox.vgrow="ALWAYS"/>
+                                <Label fx:id="playerNameLabel" alignment="CENTER" prefHeight="43.0" prefWidth="352.0"
+                                       text="Player One" textFill="WHITE">
+                                        <font>
+                                                <Font name="System Bold" size="29.0"/>
+                                        </font>
+                                </Label>
+                                <Label alignment="CENTER" prefHeight="38.0" prefWidth="367.0" text="Turn"
+                                       textFill="WHITE">
+                                        <font>
+                                                <Font size="26.0"/>
+                                        </font>
+                                </Label>
+                                <Region prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS"/>
+                        </children>
+                </VBox>
+        </children>
+</GridPane>
